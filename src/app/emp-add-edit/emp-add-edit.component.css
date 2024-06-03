@@ -1,0 +1,34 @@
+.content, h1 {
+    padding: 20px;
+}
+
+.row{
+display:flex;
+gap: 10px;
+
+mat-form-field {
+    width:100%;
+}
+
+}
+
+
+.action{
+    padding: 0px 25px 20px;
+    
+   button { 
+    flex:1
+}
+}
+
+button{
+    display: row;
+    width:50%;
+    margin: 40px 20px 20px 10x;
+    
+
+}
+
+.sa{
+    background-color:pink;
+}
