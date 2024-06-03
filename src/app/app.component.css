@@ -2,6 +2,14 @@
   flex: 1 1 auto;
 }
 
+.main-body{
+  padding-top: 20px;
+  max-width:1248px;
+    mat-form-field {
+      width: 100%;
+  }
+}
+
 mat-toolbar{
   background: pink;
 }
@@ -9,3 +17,11 @@ mat-toolbar{
 .title{
   color: white;
 }
+
+
+.update{
+  display: row;
+  width: 48%;
+  margin-left:1px;
+}
+ 

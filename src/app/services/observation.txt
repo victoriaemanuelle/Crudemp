@@ -1,0 +1,54 @@
+R3InjectorError(Standalone[_AppComponent])[_HttpClient -> _HttpClient -> _HttpClient]: 
+  NullInjectorError: No provider for _HttpClient!
+  
+>>nullinjectorerror: No provider for _HttpClient! <<
+
+on webconsole (ctrl shift i) after implementing service 
+on emp-add-edit.ts
+
+to fix it 
+
+app.config.ts
+import { provideHttpClient } from '@angular/common/http';
+provideHttpClient()
+
+
+>>FullERROR<<<
+ERROR NullInjectorError: R3InjectorError(Standalone[_EmpAddEditComponent])
+[_HttpClient -> _HttpClient -> _HttpClient -> _HttpClient]:
+ NullInjectorError: No provider for _HttpClient! at NullInjector.get
+  (core.mjs:1659:27) at R3Injector.get (core.mjs:3105:33) at R3Injector.get
+   (core.mjs:3105:33) at R3Injector.get (core.mjs:3105:33) at R3Injector.get
+    (core.mjs:3105:33) at ChainedInjector.get (core.mjs:16599:36) at lookupTokenUsingModuleInjector
+     (core.mjs:5746:39) at getOrCreateInjectable (core.mjs:5794:12) at ɵɵdirectiveInject 
+     (core.mjs:11232:19) at Module.ɵɵinject (core.mjs:1112:42)
+
+
+     
+
+APP COMPONENT TS     implement OnInit
+
+after using table error
+
+
+
+ERROR RuntimeError: NG04002: Cannot match any routes. URL Segment: 'products/create'
+    at Recognizer.noMatchError (C:\Users\wvict\Crudemp\node_modules\@angular\router\fesm2022\router.mjs:3774:12)
+    at eval (C:\Users\wvict\Crudemp\node_modules\@angular\router\fesm2022\router.mjs:3813:20)
+    at eval (C:\Users\wvict\Crudemp\node_modules\rxjs\dist\esm\internal\operators\catchError.js:10:39)
+    at OperatorSubscriber.OperatorSubscriber._error (C:\Users\wvict\Crudemp\node_modules\rxjs\dist\esm\internal\operators\OperatorSubscriber.js:23:21)
+    at OperatorSubscriber.error (C:\Users\wvict\Crudemp\node_modules\rxjs\dist\esm\internal\Subscriber.js:40:18)
+    at OperatorSubscriber._error (C:\Users\wvict\Crudemp\node_modules\rxjs\dist\esm\internal\Subscriber.js:64:30)
+    at OperatorSubscriber.error (C:\Users\wvict\Crudemp\node_modules\rxjs\dist\esm\internal\Subscriber.js:40:18)
+    at OperatorSubscriber._error (C:\Users\wvict\Crudemp\node_modules\rxjs\dist\esm\internal\Subscriber.js:64:30)
+    at OperatorSubscriber.error (C:\Users\wvict\Crudemp\node_modules\rxjs\dist\esm\internal\Subscriber.js:40:18)
+    at OperatorSubscriber._error (C:\Users\wvict\Crudemp\node_modules\rxjs\dist\esm\internal\Subscriber.js:64:30) {
+  code: 4002
+}
+
+
+
+fix export class AppComponent implements AfterViewInit
+
+
+
