@@ -1,6 +1,7 @@
 # Crudemp
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.0.2.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.0.2. <br>
+Registro de funcionários em Angular displayando tabela com formulário em pop-up
 
 ## Development server
 
